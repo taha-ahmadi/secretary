@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resources([
+    "achievement" => "AchievementController",
+    "appointment" => "AppointmentController",
+    "connection" => "ConnectionController",
+    "success" => "SuccessController",
+    "project" => "ProjectController",
+    "award" => "AwardController",
+    "goal" => "GoalController",
+]);

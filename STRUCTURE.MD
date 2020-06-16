@@ -38,7 +38,9 @@ Controller: Achievements
 Controller: Home
 
 ## Todos
-
+Todo: Add Models.
+Todo: Add Controllers.
+Todo: Add Routes.
 
 ## Features
 **Mention**: @mention people in the connections table in title and description field for all tabs.

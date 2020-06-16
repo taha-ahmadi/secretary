@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuccessesTable extends Migration
+class CreateProjectTodosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateSuccessesTable extends Migration
      */
     public function up()
     {
-        Schema::create('successes', function (Blueprint $table) {
+        Schema::create('project_todos', function (Blueprint $table) {
             $table->id();
-            $table->integer("user_id")->nullable();
+            $table->integer("project_id")->nullable();
             $table->string("title")->nullable();
             $table->string("description")->nullable();
-            $table->string("category")->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateSuccessesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('successes');
+        Schema::dropIfExists('project_todos');
     }
 }

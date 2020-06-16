@@ -15,6 +15,11 @@ class CreateConnectionsTable extends Migration
     {
         Schema::create('connections', function (Blueprint $table) {
             $table->id();
+            $table->integer("user_id")->nullable();
+            $table->string("name")->nullable();
+            $table->string("contact")->nullable();
+            $table->string("for")->nullable();
+            $table->string("description")->nullable();
             $table->timestamps();
         });
     }

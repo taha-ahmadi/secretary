@@ -15,7 +15,7 @@
 + awards:   award(Varchar), title(Varchar), for(Varchar), user_id(Int): K to users
 > award: What did I reward myself with?
 > for: achievement/success
-+ appointments: title(Varchar), description(Varchar), who(Varchar), date-time(Date-time), user_id(Int): K to users
++ appointments: title(Varchar), description(Varchar), who(Varchar), meet-date(Date-time), user_id(Int): K to users
 > who: @mention the people I meet.
 + connections: name(Varchar), contact(Varchar), for(Varchar), description(Varchar), user_id(Int): K to users
 > contact: email/phone_number/address or ...
@@ -38,9 +38,9 @@ Controller: Achievements
 Controller: Home
 
 ## Todos
-Todo: Add Models.
-Todo: Add Controllers.
-Todo: Add Routes.
+~~Todo: Add Models.~~
+~~Todo: Add Controllers.~~
+~~Todo: Add Routes.~~
 
 ## Features
 **Mention**: @mention people in the connections table in title and description field for all tabs.
